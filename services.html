@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./services.css">
+    <title>Pet Shop</title>
+</head>
+<body>
+    <h1>Meu Pet Shop ERP</h1>
+    <form id="create-user-form">
+        <input class="create-user-input" type="text" name="nameService" placeholder="Nome do serviço" />
+        <input class="create-user-input" type="date" name="dateService" placeholder="Data de agendamento" />
+        <input class="create-user-input" type="text" name="animalService" placeholder="Animal" />
+        <button id="create-service-button" type="submit">Criar Serviço</button>
+    </form>
+    <table id="service-list-container">
+        <tr>
+            <th>Serviço</th>
+            <th>Data de agendamento</th>
+            <th>Animal</th>
+        </tr>
+    </table>
+    <script src="./scriptService.js"></script>
+</body>
+</html>

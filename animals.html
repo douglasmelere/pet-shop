@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./animal.css" />
+  <title>Pet Shop</title>
+</head>
+<body>
+  <h1>Meu Pet Shop ERP</h1>
+  <form id="create-user-form">
+    <input
+      class="create-user-input"
+      type="text"
+      name="animal-name"
+      placeholder="Nome do animal"
+    />
+    <input
+      class="create-user-input"
+      type="text"
+      name="animal-breed"
+      placeholder="Raça"
+    />
+    <input
+      class="create-user-input"
+      type="number"
+      name="animal-age"
+      placeholder="Idade do animal"
+    />
+    <input
+      class="create-user-input"
+      type="text"
+      name="animal-weight"
+      placeholder="Peso do animal"
+    />
+    <input
+      class="create-user-input"
+      type="text"
+      name="animal-owner-name"
+      placeholder="Nome do Dono"
+    />
+    <select class="create-user-input" id="animal-select">
+      <option disabled selected>É vacinado?</option>
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select>
+    <button id="create-animal-button" type="submit">Cadastrar Animal</button>
+  </form>
+  <table id="animal-list-container">
+    <tr>
+      <th>Nome do animal</th>
+      <th>Raça</th>
+      <th>Idade do animal</th>
+      <th>Peso do animal</th>
+      <th>Nome do Dono</th>
+      <th>É vacinado?</th>
+    </tr>
+  </table>
+  <script src="./animal.js"></script>
+</body>
+</html>
